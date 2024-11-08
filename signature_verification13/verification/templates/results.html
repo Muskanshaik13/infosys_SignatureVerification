@@ -1,0 +1,17 @@
+<h2>Prediction Results</h2>
+<table>
+    <tr>
+        <th>Image</th>
+        <th>Prediction</th>
+        <th>Accuracy</th>
+        <th>Date Uploaded</th>
+    </tr>
+    {% for upload in uploads %}
+    <tr>
+        <td><img src="{{ upload.image.url }}" width="100" /></td>
+        <td>{{ upload.prediction_label }}</td>
+        <td>{{ upload.prediction_accuracy }}%</td>
+        <td>{{ upload.uploaded_at }}</td>
+    </tr>
+    {% endfor %}
+</table>
