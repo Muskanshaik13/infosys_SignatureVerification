@@ -1,0 +1,97 @@
+/* General Page Background */
+body {
+    background-color: #e0f7fa; /* Light blue background */
+    font-family: Arial, sans-serif;
+}
+
+/* Form Container */
+.container {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h1, h2 {
+    color: #007bff; /* Primary blue color for headings */
+    text-align: center;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="password"],
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #007bff;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Button Styling */
+button, input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff; /* Blue background for buttons */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Link Styling */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Add additional spacing for form elements */
+form > div {
+    margin-bottom: 15px;
+}
+/* Table Styling */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #007bff;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    color: white;
+    background-color: #007bff;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}

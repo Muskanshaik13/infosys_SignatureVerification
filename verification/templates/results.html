@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Results</title>
+</head>
+<body>
+    <div style="text-align: center; margin-top: 50px;">
+        <h2>Prediction Results</h2>
+        <table border="1" style="margin: 0 auto; border-collapse: collapse;">
+            <thead>
+                <tr>
+                    <th style="padding: 10px; border: 1px solid black;">Image</th>
+                    <th style="padding: 10px; border: 1px solid black;">Prediction</th>
+                    <th style="padding: 10px; border: 1px solid black;">Accuracy</th>
+                    <th style="padding: 10px; border: 1px solid black;">Date Uploaded</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for upload in uploads %}
+                <tr>
+                    <td style="padding: 10px; border: 1px solid black;">
+                        <img src="{{ upload.image.url }}" alt="Uploaded Image" width="100">
+                    </td>
+                    <td style="padding: 10px; border: 1px solid black;">{{ upload.prediction_label }}</td>
+                    <td style="padding: 10px; border: 1px solid black;">{{ upload.prediction_accuracy }}%</td>
+                    <td style="padding: 10px; border: 1px solid black;">{{ upload.uploaded_at }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
